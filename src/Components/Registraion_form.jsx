@@ -44,7 +44,7 @@ export default function Registraion_form() {
   const [confirmpassword, setconfirmPassowrd] = useState(false);
   return (
     <section>
-      <div className="border rounded-lg p-4 shadow-md hover:shadow-xl   hover:-translate-y-1 transition-all duration-300 ">
+      <div className="border rounded-lg  p-4 shadow-md hover:shadow-xl   hover:-translate-y-1 transition-all duration-300 ">
         <h1 className="font-bold text-3xl">Student Registraion Form</h1>
         <Formik
           validationSchema={validationSchema}
@@ -64,7 +64,7 @@ export default function Registraion_form() {
             confirmPassword: "",
           }}
         >
-          <Form className="w-[45vw] h-[60vh] relative mt-5 text-[#505050]   flex gap-9 flex-row flex-wrap   ">
+          <Form className="w-[39vw] h-[60vh] relative mt-5 text-[#505050]   flex gap-10 flex-wrap   ">
             <div className="relative flex flex-col  ">
               <label className="absolute px-3 -top-3 left-3 bg-amber-100">
                 First Name
@@ -73,7 +73,7 @@ export default function Registraion_form() {
                 autoComplete="off"
                 name="firstname"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               />
@@ -91,7 +91,7 @@ export default function Registraion_form() {
                 autoComplete="off"
                 name="lastname"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               />
@@ -109,12 +109,12 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="dob"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="date"
               />
             </div>
-            <div className="flex   w-[21vw] items-center">
+            <div className="flex   w-[18vw] items-center">
               <div className="flex flex-col gap-2 ">
                 <label className="px-3   text-xl   bg-amber-100">Gender</label>
                 <div className="flex items-center  space-x-2">
@@ -149,7 +149,7 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="email"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               />
@@ -167,7 +167,7 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="phone"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="tel"
                 inputMode="numeric"
@@ -187,7 +187,7 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="address"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               />
@@ -201,7 +201,7 @@ export default function Registraion_form() {
                 name="qualification"
                 as="select"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               >
@@ -237,15 +237,15 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="password"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type={showPassword ? "text" : "password"}
               />
               <UseAnimations
-                className="absolute left-40 "
+                className="absolute right-5 "
                 animation={visibility2}
                 size={36}
-                reverse={showPassword} // toggle eye animation
+                reverse={showPassword}  
                 onClick={() => setShowPassword(!showPassword)}
               />
               <ErrorMessage
@@ -262,15 +262,15 @@ export default function Registraion_form() {
                 autoComplete="offf"
                 name="confirmPassword"
                 className={
-                  "w-[21vw] font-semibold h-11 p-1 rounded-[3px] border"
+                  "w-[18vw] font-semibold h-11 p-1 rounded-[3px] border"
                 }
                 type="text"
               />
               <UseAnimations
-                className="absolute left-40 "
+                className="absolute right-5 "
                 animation={visibility2}
                 size={36}
-                reverse={confirmpassword} // toggle eye animation
+                reverse={confirmpassword}  
                 onClick={() => setconfirmPassowrd(!confirmpassword)}
               />
               <ErrorMessage
